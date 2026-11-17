@@ -2,9 +2,9 @@ import type { ReactNode } from "react";
 import type { PhotoRatio } from "../data/site";
 
 /**
- * Four hearts meeting at their points: two terracotta, two sage,
- * with a single earth-ink stem. Drawn on a 200 × 220 field so the
- * mark keeps generous breathing room at every size.
+ * The four-leaf clover mark: two terracotta leaves, two sage leaves,
+ * and an earth-ink stem. Assets are pre-trimmed with a transparent
+ * background so the mark sits cleanly on cream and colored bands.
  */
 export function CloverMark({
   className = "",
@@ -13,33 +13,17 @@ export function CloverMark({
   className?: string;
   title?: string;
 }) {
-  const heart =
-    "M0 -38C-18 -56 -40 -44 -30 -26C-24 -15 -8 -6 0 0C8 -6 24 -15 30 -26C40 -44 18 -56 0 -38Z";
   const decorative = title.length === 0;
   return (
-    <svg
+    <img
       className={className}
-      viewBox="0 0 200 220"
-      role={decorative ? "presentation" : "img"}
-      aria-label={decorative ? undefined : title}
+      src="/logo.png"
+      width={417}
+      height={510}
+      alt={decorative ? "" : title}
       aria-hidden={decorative ? true : undefined}
-      focusable="false"
-    >
-      <path
-        className="mark-stem"
-        d="M1 6C5 38 7 62 20 78"
-        fill="none"
-        stroke="#4A3F36"
-        strokeWidth="5"
-        strokeLinecap="round"
-      />
-      <g transform="translate(100 92) scale(1.32)">
-        <path fill="#A35F45" d={heart} />
-        <path fill="#8FA176" d={heart} transform="rotate(90)" />
-        <path fill="#A35F45" d={heart} transform="rotate(180)" />
-        <path fill="#8FA176" d={heart} transform="rotate(270)" />
-      </g>
-    </svg>
+      decoding="async"
+    />
   );
 }
 

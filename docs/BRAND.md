@@ -34,7 +34,7 @@ This document synthesizes the November 2026 Brand & Website Brief, In My Own Wor
 
 ## 2. Logo Specifications
 
-- **Visual Concept:** Four hearts meeting at their points to form a four-leaf clover with a gentle stem. Two hearts are **Sage** and two hearts are **Terracotta**, representing two whole individuals (client and practitioner, mentor and student, or community) coming together to create something new.
+- **Visual Concept:** A four-leaf clover with a gentle earth-ink stem. Two leaves are **Sage** and two are **Terracotta**, representing two whole individuals (client and practitioner, mentor and student, or community) coming together to create something new.
 - **Usage Rules:**
     - Maintain generous whitespace around the mark.
     - Place on Cream (`#F7F2EA`) or very light backgrounds.
@@ -49,8 +49,8 @@ Every color is drawn from Stephanie's healing studio. Lead with Cream and Sage, 
 | Token Name   | Hex Code  | Role & Usage Rules                                                                    |
 | :----------- | :-------- | :------------------------------------------------------------------------------------ |
 | `cream`      | `#F7F2EA` | Primary page background (minimal, airy, natural)                          |
-| `sage`       | `#8FA176` | Main brand color, soft section backgrounds, logo hearts                |
-| `terracotta` | `#A35F45` | Primary CTA buttons, highlights, logo hearts, single Home feature band |
+| `sage`       | `#8FA176` | Main brand color, soft section backgrounds, logo leaves                |
+| `terracotta` | `#A35F45` | Primary CTA buttons, highlights, logo leaves, single Home feature band |
 | `earth-ink`  | `#4A3F36` | Primary body copy, headings, and logo stem                                   |
 | `honey-wood` | `#D9B77E` | Warm accents and section dividers                                            |
 | `jute`       | `#C9AE85` | Subtle textured backgrounds for story sections                            |

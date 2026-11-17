@@ -23,7 +23,7 @@
   --brass: #b8954a;
   --line: rgba(74, 63, 54, 0.16);
   --line-soft: rgba(74, 63, 54, 0.09);
-  --serif: "Cormorant Garamond", "Times New Roman", serif;
+  --serif: "Brygada 1918", Georgia, serif;
   --sans: "Jost", "Helvetica Neue", Arial, sans-serif;
   --wrap: 1180px;
   --header-h: 84px;
@@ -75,13 +75,13 @@ h4 {
 
 h1 {
   font-size: clamp(3.1rem, 7vw, 5.3rem);
-  font-weight: 300;
+  font-weight: 400;
   line-height: 0.98;
 }
 
 h2 {
   font-size: clamp(2.05rem, 3.5vw, 3.15rem);
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.06;
 }
 
@@ -225,7 +225,7 @@ main {
   font-family: var(--serif);
   font-size: clamp(1.3rem, 1.9vw, 1.65rem);
   font-style: italic;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.01em;
   line-height: 1.35;
 }
@@ -469,7 +469,7 @@ main {
   display: block;
   color: var(--terracotta);
   font-size: 19px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .site-nav {
@@ -718,10 +718,6 @@ main {
   pointer-events: none;
 }
 
-.hero-watermark .mark-stem {
-  display: none;
-}
-
 .page-hero-copy > * {
   animation: rise 0.85s var(--ease) both;
 }
@@ -943,7 +939,7 @@ main {
 .feature h2 {
   max-width: 23ch;
   color: var(--cream-light);
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .feature-link {
@@ -1024,7 +1020,7 @@ main {
   font-family: var(--serif);
   font-size: clamp(1.85rem, 3.5vw, 2.8rem);
   font-style: italic;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.24;
 }
 
@@ -1079,7 +1075,7 @@ main {
 .closing h2 {
   max-width: 20ch;
   color: var(--cream-light);
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .closing-copy {
@@ -1236,7 +1232,7 @@ main {
   color: var(--terracotta);
   font-family: var(--serif);
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.1;
 }
 
@@ -1475,7 +1471,7 @@ main {
   font-family: var(--serif);
   font-size: 1.9rem;
   font-style: italic;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1;
 }
 
@@ -1526,7 +1522,7 @@ main {
   color: var(--terracotta);
   font-family: var(--serif);
   font-size: clamp(1.8rem, 2.8vw, 2.4rem);
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1;
 }
 
@@ -2157,7 +2153,7 @@ main {
   font-family: var(--serif);
   font-size: clamp(1.7rem, 3vw, 2.5rem);
   font-style: italic;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.3;
 }
 

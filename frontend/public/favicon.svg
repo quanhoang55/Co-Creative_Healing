@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Co-Creative Healing clover mark">
-  <g transform="translate(32 26) scale(.42)">
-    <path d="M1 6C5 38 7 62 20 78" fill="none" stroke="#4A3F36" stroke-width="5" stroke-linecap="round"/>
-    <path fill="#A35F45" d="M0 -38C-18 -56 -40 -44 -30 -26C-24 -15 -8 -6 0 0C8 -6 24 -15 30 -26C40 -44 18 -56 0 -38Z"/>
-    <path fill="#8FA176" d="M0 -38C-18 -56 -40 -44 -30 -26C-24 -15 -8 -6 0 0C8 -6 24 -15 30 -26C40 -44 18 -56 0 -38Z" transform="rotate(90)"/>
-    <path fill="#A35F45" d="M0 -38C-18 -56 -40 -44 -30 -26C-24 -15 -8 -6 0 0C8 -6 24 -15 30 -26C40 -44 18 -56 0 -38Z" transform="rotate(180)"/>
-    <path fill="#8FA176" d="M0 -38C-18 -56 -40 -44 -30 -26C-24 -15 -8 -6 0 0C8 -6 24 -15 30 -26C40 -44 18 -56 0 -38Z" transform="rotate(270)"/>
-  </g>
-</svg>

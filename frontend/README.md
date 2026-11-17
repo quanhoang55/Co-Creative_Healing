@@ -43,11 +43,11 @@ this automatically.
 - **Palette:** Cream `#F7F2EA`, Sage `#8FA176`, Terracotta `#A35F45`, Earth Ink
   `#4A3F36`, Honey Wood `#D9B77E`, Jute `#C9AE85`, Misty Sea `#A9BCC4` (thin
   accents only), Soft Brass `#B8954A`.
-- **Type:** Cormorant Garamond for headings and italic taglines; Jost for body
-  copy, labels, and buttons.
-- **Mark:** four hearts (two terracotta, two sage) meeting at their points with
-  an earth-ink stem. Defined once in `src/components/Brand.tsx` and reused for
-  the favicon and photo placeholders.
+- **Type:** Brygada 1918 for headings and italic taglines; Jost for body copy,
+  labels, and buttons.
+- **Mark:** the four-leaf clover logo (`public/logo.png`, supplied asset),
+  rendered through `CloverMark` in `src/components/Brand.tsx` and reused for the
+  favicon, header, footer, watermarks, and photo placeholders.
 - **Photography:** all image spaces are labeled editorial placeholders for the
   December 2026 shoot. Replace the `PhotoPlaceholder` component with real images
   when they arrive.
