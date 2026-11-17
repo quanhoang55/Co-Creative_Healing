@@ -9,7 +9,7 @@ This document synthesizes the November 2026 Brand & Website Brief, In My Own Wor
 - **Practice Name:** Co-Creative Healing
 - **Practitioner:** Stephanie Shrum (Bodyworker & Healing Facilitator)
 - **Location:** Confirm whether the public site may say "Upper Ojai, California." Until then, use "Ojai, California" or omit the locality.
-- **Core Tagline:** _"Come whole. Create together. Leave expanded."_ (Used alongside the logo everywhere; set in Cormorant Garamond italic)
+- **Core Tagline:** _"Come whole. Create together. Leave expanded."_ (Used alongside the logo everywhere; set in Brygada 1918 italic)
 - **Tagline Sub-copy:** _"You are already whole. Together, we create the space for you to leave as a more expanded version of yourself."_
 - **Home Hero Headline:** _"All of you is welcome."_
 - **Philosophy Headline:** _"Whole on our own. Something new together."_
@@ -61,7 +61,7 @@ Every color is drawn from Stephanie's healing studio. Lead with Cream and Sage, 
 
 ## 4. Typography (Google Fonts)
 
-- **Headings & Logo Wordmark:** `Cormorant Garamond` (Elegant, soft serif; use _Italic_ for taglines)
+- **Headings & Logo Wordmark:** `Brygada 1918` (Elegant, soft serif; 400–700; use _Italic_ for taglines)
 - **Body Text & Buttons:** `Jost` (Clean, friendly sans-serif)
 
 ---
@@ -71,6 +71,7 @@ Every color is drawn from Stephanie's healing studio. Lead with Cream and Sage, 
 - **Persistent Dual CTAs:** Every page must feature two clear action buttons
 - **Booking flow:** A visitor can choose "Let's talk first" for a short phone conversation or "Request a session" with a short intake. Stephanie confirms the match before sharing arrival details.
 - **Privacy:** Never publish the studio address, a map that reveals it, or photos that reveal the location. Share the address only after the session is confirmed.
+- **Photography:** The prototype uses licensed placeholder photography from Pexels, stored in `frontend/public/images/`. Alt text and captions describe the actual scene shown and never imply the people pictured are Stephanie or her clients. Replace with Stephanie's own photographs when available.
 - **Mutual match:** A client can stop a session at any time if it does not feel like a match and owes nothing for that session.
 - **Newsletter:** Include the newsletter in the footer and on the Mentorship and Ojai Hundred pages.
 - **Social and search:** Link Facebook and Instagram in the footer. Use natural search terms in page titles and copy. A service-area Google Business Profile remains a compliance question.

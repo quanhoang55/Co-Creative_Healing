@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { faqs, modalities, photos } from "../data/site";
-import { Heading, PhotoPlaceholder, Section, SectionHead } from "../components/Brand";
-import { PageHero } from "../components/PageHero";
+import { Heading, Photo, Section, SectionHead } from "../components/Brand";
+import { CenteredHero } from "../components/PageHero";
 import { Closing } from "../components/Chrome";
 
 function Accordion() {
@@ -49,15 +49,16 @@ function Accordion() {
 export function Sessions() {
   return (
     <>
-      <PageHero
+      <CenteredHero
         eyebrow="Sessions"
         title="A session that meets you where you are."
         copy="Every session is co-created. It might happen on the table, on a floor mat, or sitting together in conversation first. We follow what your body is ready to do."
-        photo
-        photoDescription={photos.table}
-        ratio="portrait"
-        tone="sage"
         note="Upper Ojai, California · exact location shared once your session is confirmed."
+        facts={[
+          { label: "Length", value: "2 hrs or 1 hr 15 min" },
+          { label: "Investment", value: "$85–$250 · sliding scale" },
+          { label: "Setting", value: "In person · Upper Ojai" },
+        ]}
       />
 
       <Section>
@@ -75,10 +76,10 @@ export function Sessions() {
           ))}
         </div>
         <div className="three photo-row">
-          <PhotoPlaceholder description={photos.table} ratio="landscape" />
-          <PhotoPlaceholder description={photos.mat} ratio="landscape" tone="jute" />
-          <PhotoPlaceholder
-            description={photos.conversation}
+          <Photo photo={photos.table} ratio="landscape" />
+          <Photo photo={photos.mat} ratio="landscape" tone="jute" />
+          <Photo
+            photo={photos.conversation}
             ratio="landscape"
             tone="cream"
           />
@@ -127,42 +128,48 @@ export function Sessions() {
           title="Room to choose your tide."
           lead="Both sessions are offered on a sliding scale. Choose the number that is honest for your life right now, and we will work generously within the time we have."
         />
-        <div className="pricing">
-          <article>
+        <div className="price-menu">
+          <article className="price-row">
             <span className="pricing-index">01</span>
-            <h3>Full session</h3>
+            <div className="price-row-body">
+              <h3>Full session</h3>
+              <p>
+                Set aside a generous two hours, with about ninety minutes of
+                hands-on work. Best when you want to slow down and address the
+                whole picture.
+              </p>
+              <p className="pricing-detail">2 hours · ~90 min hands-on</p>
+            </div>
             <p className="price">$165–$250</p>
-            <p>
-              Set aside a generous two hours, with about ninety minutes of
-              hands-on work. Best when you want to slow down and address the whole
-              picture.
-            </p>
-            <p className="pricing-detail">2 hours · ~90 min hands-on</p>
           </article>
-          <article>
+          <article className="price-row">
             <span className="pricing-index">02</span>
-            <h3>Half session</h3>
+            <div className="price-row-body">
+              <h3>Half session</h3>
+              <p>
+                Set aside about an hour and fifteen minutes, with roughly
+                forty-five minutes of hands-on work. Best for a specific, acute
+                issue.
+              </p>
+              <p className="pricing-detail">1 hr 15 min · ~45 min hands-on</p>
+            </div>
             <p className="price">$85–$125</p>
-            <p>
-              Set aside about an hour and fifteen minutes, with roughly
-              forty-five minutes of hands-on work. Best for a specific, acute
-              issue.
-            </p>
-            <p className="pricing-detail">1 hr 15 min · ~45 min hands-on</p>
           </article>
-          <article className="pricing-note">
+          <aside className="price-note">
             <span className="quote-mark" aria-hidden="true">
               “
             </span>
-            <p className="tides">
-              Money is like the tides: sometimes high, sometimes low.
-            </p>
-            <p>
-              If your tide is low, choose the lower end of the range. There is no
-              application, no proof required, and no conversation needed to
-              justify it.
-            </p>
-          </article>
+            <div>
+              <p className="tides">
+                Money is like the tides: sometimes high, sometimes low.
+              </p>
+              <p>
+                If your tide is low, choose the lower end of the range. There is
+                no application, no proof required, and no conversation needed to
+                justify it.
+              </p>
+            </div>
+          </aside>
         </div>
       </Section>
 

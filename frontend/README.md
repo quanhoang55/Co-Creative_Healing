@@ -47,10 +47,12 @@ this automatically.
   labels, and buttons.
 - **Mark:** the four-leaf clover logo (`public/logo.png`, supplied asset),
   rendered through `CloverMark` in `src/components/Brand.tsx` and reused for the
-  favicon, header, footer, watermarks, and photo placeholders.
-- **Photography:** all image spaces are labeled editorial placeholders for the
-  December 2026 shoot. Replace the `PhotoPlaceholder` component with real images
-  when they arrive.
+  favicon, header, footer, and watermarks.
+- **Photography:** licensed Pexels images live in `public/images/` and are mapped
+  through the `Photo` component and the `photos` object in `src/data/site.ts`.
+  Alt text and captions describe the actual scene, never claiming the people
+  pictured are Stephanie or her clients. Replace them with Stephanie's own
+  photography when it is ready.
 
 ## Privacy guardrails
 
@@ -64,7 +66,8 @@ this automatically.
 Items marked **Confirm** in `docs/BRAND.md` and `docs/STRUCTURE.md` remain open:
 California licensing wording, cancellation terms, phone number and booking
 platform, collective cohort details, the training-resume PDF, and testimonial
-permission. The UI labels placeholders honestly where needed.
+permission. Photography is explicitly labeled as illustrative until Stephanie's
+own images are available.
 
 ## Structure
 
@@ -72,11 +75,11 @@ permission. The UI labels placeholders honestly where needed.
 src/
   App.tsx                  routes, page metadata, overlay state
   components/
-    Brand.tsx              clover mark, photo placeholders, headings
+    Brand.tsx              clover mark, Photo component, headings
     Chrome.tsx             header, footer, newsletter, modal, closing band
     Forms.tsx              request, interest, application forms
     OverlayContext.ts      shared CTA actions
-    PageHero.tsx           reusable page hero
+    PageHero.tsx           page-specific hero variants
   data/site.ts             nav, photos, FAQs, videos, privacy copy
   pages/                   one file per route
   index.css                design system and responsive layout

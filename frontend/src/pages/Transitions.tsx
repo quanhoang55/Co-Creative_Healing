@@ -1,18 +1,17 @@
 import { photos } from "../data/site";
-import { CloverMark, Heading, PhotoPlaceholder, Section, SectionHead } from "../components/Brand";
-import { PageHero } from "../components/PageHero";
+import { CloverMark, Heading, Photo, Section, SectionHead } from "../components/Brand";
+import { BannerHero } from "../components/PageHero";
 import { Closing } from "../components/Chrome";
 
 export function Transitions() {
   return (
     <>
-      <PageHero
+      <BannerHero
         eyebrow="Home & Life Transitions"
         title="Homes hold our lives."
         copy="Over the years I've learned to hold space for people not only on the table, but through the big transitions of where and how they live. A home carries memory. So does a lifetime of belongings."
-        photo
-        photoDescription={photos.transition}
-        ratio="portrait"
+        photo={photos.transition}
+        ratio="wide"
         tone="jute"
         note="Offered in Upper Ojai and surrounding communities · exact location shared once your session is confirmed."
       />
@@ -24,7 +23,7 @@ export function Transitions() {
           lead="Some transitions are practical, some are ceremonial, and most are both. We begin by listening to what this change means for you, then shape the support around it."
         />
 
-        <div className="offerings">
+        <div className="offerings offerings--threshold">
           <article className="offering">
             <div className="offering-copy">
               <span className="offering-index">01</span>
@@ -45,11 +44,7 @@ export function Transitions() {
                 </p>
               </Heading>
             </div>
-            <PhotoPlaceholder
-              description={photos.transition}
-              ratio="portrait"
-              tone="sage"
-            />
+            <Photo photo={photos.threshold} ratio="portrait" tone="sage" />
           </article>
 
           <article className="offering offering--reverse">
@@ -72,8 +67,8 @@ export function Transitions() {
                 </p>
               </Heading>
             </div>
-            <PhotoPlaceholder
-              description={photos.keepsake}
+            <Photo
+              photo={photos.keepsake}
               ratio="portrait"
               tone="cream"
             />
@@ -110,7 +105,7 @@ export function Transitions() {
           title="No ceremony is one-size-fits-all."
           lead="The shape comes from your home, your history, and what you hope to feel when we are finished."
         />
-        <div className="steps">
+        <div className="steps steps--timeline">
           <div>
             <span className="step-number">01</span>
             <h3>A conversation</h3>

@@ -4,10 +4,12 @@
 
 This architecture synthesizes the November 2026 Brand & Website Brief, In My Own Words, and My Story PDFs. Text marked **Confirm** needs Stephanie's decision before publication. Routes, component types, and layout choices are implementation recommendations.
 
+**Build note:** the prototype stages every `[PHOTO SPACE]` with licensed Pexels photography in `frontend/public/images/` (see `frontend/src/data/site.ts`). The descriptions here remain the shot list for Stephanie's own photographs.
+
 ## Global Layout Shell
 
 - **Recommended header / navigation:**
-    - Left: Four-Leaf Clover SVG Mark + `Co-Creative Healing` wordmark (`Cormorant Garamond`).
+    - Left: supplied four-leaf clover mark (`frontend/public/logo.png`) + `Co-Creative Healing` wordmark (`Brygada 1918`).
     - Center/Right Navigation Links: `Home`, `Sessions`, `Home & Life Transitions`, `Ojai Hundred Healer Collective`, `Mentorship`, `About`, `Contact`.
     - Mobile-first responsive drawer menu.
 - **Recommended conversion bar / footer:**
@@ -23,13 +25,13 @@ This architecture synthesizes the November 2026 Brand & Website Brief, In My Own
 1. **Hero Section (`cream` background):**
     - Eyebrow: `Co-Creative Healing`
     - Headline (`H1`): `All of you is welcome.`
-    - Tagline (`Cormorant Garamond Italic`): `Come whole. Create together. Leave expanded.`
+    - Tagline (`Brygada 1918 Italic`): `Come whole. Create together. Leave expanded.`
     - Divider: Thin `soft-brass` (`#B8954A`) line.
     - Sub-copy: _"You are already whole. Together, we create the space for you to leave as a more expanded version of yourself."_
     - CTAs: `Let's talk first` + `Request a session`.
     - `[PHOTO SPACE 1]`: Wide hero image of Stephanie in the studio, natural light, sage chair and cane cabinet, with open space for text.
 2. **Philosophy Section (`sage` soft tint or `cream`):**
-    - Standalone Clover SVG Mark.
+    - Standalone clover mark (supplied PNG).
     - Headline (`H2`): `Whole on our own. Something new together.`
     - Copy: Short welcome paragraph explaining innate wisdom, wholeness, and transformation.
 3. **Ways to Work Together (4-Card Grid):**

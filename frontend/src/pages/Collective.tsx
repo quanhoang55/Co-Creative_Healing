@@ -1,22 +1,20 @@
 import { photos } from "../data/site";
-import { CloverMark, PhotoPlaceholder, Section, SectionHead } from "../components/Brand";
-import { PageHero } from "../components/PageHero";
+import { CloverMark, Photo, Section, SectionHead } from "../components/Brand";
+import { StatementHero } from "../components/PageHero";
 import { Closing, DualCtas, Newsletter } from "../components/Chrome";
 import { ApplicationForm } from "../components/Forms";
 
 export function Collective() {
   return (
     <>
-      <PageHero
+      <StatementHero
         eyebrow="The Ojai Hundred Healer Collective"
         title="Care for the people who care for everyone else."
         tagline="100 complimentary sessions. One healer at a time."
         copy="The people who hold space for others are often the last to receive it. This collective is a standing invitation to be the one on the table for a change."
-        photo
-        photoDescription={photos.movement}
-        ratio="portrait"
-        tone="jute"
         note="Applications are read personally · Upper Ojai, California"
+        numeral="100"
+        numeralLabel="complimentary sessions"
       />
 
       <section className="stat-strip" aria-label="Collective at a glance">
@@ -37,7 +35,7 @@ export function Collective() {
       </section>
 
       <Section>
-        <div className="split split--story">
+        <div className="split split--story story-flip">
           <div>
             <p className="eyebrow">Why I'm doing this</p>
             <h2>The pond is big enough.</h2>
@@ -60,8 +58,8 @@ export function Collective() {
               with Stephanie before the collective opens.
             </p>
           </div>
-          <PhotoPlaceholder
-            description={photos.movement}
+          <Photo
+            photo={photos.movement}
             ratio="portrait"
             tone="sage"
           />

@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { privacy } from "../data/site";
 import { CloverMark, Heading, Section } from "../components/Brand";
-import { PageHero } from "../components/PageHero";
+import { CompactHero } from "../components/PageHero";
 import { Newsletter } from "../components/Chrome";
 import { RequestForm } from "../components/Forms";
 import { OverlayContext } from "../components/OverlayContext";
@@ -11,14 +11,14 @@ export function Contact() {
 
   return (
     <>
-      <PageHero
+      <CompactHero
         eyebrow="Connect & request a session"
         title="Start where you are."
         copy="Every session begins with a conversation. Choose a short call first, or send a note about what brings you here. There is no script to follow."
         note={`${privacy} No street address is published and no map is embedded.`}
       />
 
-      <Section className="contact-section">
+      <Section className="contact-section contact-desk">
         <div className="contact-grid">
           <article className="talk-panel">
             <CloverMark className="talk-panel-mark" title="" />

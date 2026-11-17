@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { photos, privacy, waysToWork } from "../data/site";
-import { CloverMark, Heading, PhotoPlaceholder, Section, SectionHead } from "../components/Brand";
+import { CloverMark, Heading, Photo, Section, SectionHead } from "../components/Brand";
 import { PageHero } from "../components/PageHero";
 import { Closing } from "../components/Chrome";
 
@@ -12,8 +12,7 @@ export function Home() {
         title="All of you is welcome."
         tagline="Come whole. Create together. Leave expanded."
         copy="You are already whole. Together, we create the space for you to leave as a more expanded version of yourself."
-        photo
-        photoDescription={photos.hero}
+        photo={photos.hero}
         note={privacy}
       />
 
@@ -64,8 +63,8 @@ export function Home() {
         <div className="cards">
           {waysToWork.map((item, index) => (
             <Link className="card" key={item.to} to={item.to}>
-              <PhotoPlaceholder
-                description={photos[item.photo]}
+              <Photo
+                photo={photos[item.photo]}
                 ratio="landscape"
                 tone={index % 2 === 0 ? "sage" : "jute"}
               />
@@ -120,7 +119,7 @@ export function Home() {
               The clover is a reminder that what makes you different is the gift.
             </p>
           </div>
-          <PhotoPlaceholder description={photos.clover} tone="cream" ratio="square" />
+          <Photo photo={photos.clover} tone="cream" ratio="square" />
         </div>
       </Section>
 

@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import type { PhotoRatio } from "../data/site";
+import type { Photo as PhotoData, PhotoRatio } from "../data/site";
 
 /**
  * The four-leaf clover mark: two terracotta leaves, two sage leaves,
@@ -18,8 +18,6 @@ export function CloverMark({
     <img
       className={className}
       src="/logo.png"
-      width={417}
-      height={510}
       alt={decorative ? "" : title}
       aria-hidden={decorative ? true : undefined}
       decoding="async"
@@ -27,25 +25,30 @@ export function CloverMark({
   );
 }
 
-export function PhotoPlaceholder({
-  description,
+export function Photo({
+  photo,
   ratio = "landscape",
   tone = "sage",
+  priority = false,
 }: {
-  description: string;
+  photo: PhotoData;
   ratio?: PhotoRatio;
   tone?: "sage" | "jute" | "cream";
+  priority?: boolean;
 }) {
   return (
     <figure className={`photo photo--${ratio} photo--${tone}`}>
       <div className="photo-frame">
-        <CloverMark className="photo-mark" title="Photo placeholder" />
-        <span className="photo-stamp">Photoshoot space</span>
+        <img
+          src={photo.src}
+          alt={photo.alt}
+          loading={priority ? "eager" : "lazy"}
+          decoding="async"
+          style={photo.focus ? { objectPosition: photo.focus } : undefined}
+        />
       </div>
       <figcaption>
-        <span className="photo-caption-label">Photo space</span>
-        <span className="photo-caption-text">{description}</span>
-        <em>December 2026 · to be photographed</em>
+        <span className="photo-caption-text">{photo.description}</span>
       </figcaption>
     </figure>
   );

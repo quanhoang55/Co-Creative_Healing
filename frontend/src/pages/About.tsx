@@ -1,21 +1,26 @@
 import { photos } from "../data/site";
-import { CloverMark, Heading, PhotoPlaceholder, Section, SectionHead } from "../components/Brand";
-import { PageHero } from "../components/PageHero";
+import { CloverMark, Heading, Photo, Section, SectionHead } from "../components/Brand";
+import { MirrorHero } from "../components/PageHero";
 import { Closing } from "../components/Chrome";
 
 export function About() {
   return (
     <>
-      <PageHero
+      <MirrorHero
         eyebrow="About Stephanie Shrum"
         title="A life shaped by curiosity."
         tagline="Bodyworker & healing facilitator."
         copy="It is with humility and reverence that I do this work. I have been shaped by hands-on care, long study, travel, New Orleans, renovation dust, and the quiet of Ojai."
-        photo
-        photoDescription={photos.portrait}
+        photo={photos.portrait}
         ratio="portrait"
         tone="sage"
         note="Upper Ojai, California · exact location shared once your session is confirmed."
+        facts={[
+          { label: "First study", value: "Shiatsu, 1992" },
+          { label: "School", value: "Blue Cliff, 1998" },
+          { label: "Training", value: "2,000+ hours" },
+          { label: "Home", value: "Upper Ojai, California" },
+        ]}
       />
 
       <Section>
@@ -25,7 +30,7 @@ export function About() {
           lead="I did not set out to become a bodyworker. I set out to understand people. The path kept bringing me back to touch."
         />
 
-        <div className="chapters">
+        <div className="chapters chapters--timeline">
           <article className="chapter">
             <span className="chapter-number">01</span>
             <div>
@@ -82,7 +87,7 @@ export function About() {
 
       <Section className="jute-section new-orleans">
         <div className="split split--story">
-          <PhotoPlaceholder description={photos.camel} ratio="portrait" tone="cream" />
+          <Photo photo={photos.camel} ratio="portrait" tone="cream" />
           <div>
             <p className="eyebrow">Chapter 04 · New Orleans</p>
             <h2>Trying on who I wasn't — and keeping what fit.</h2>
@@ -107,7 +112,7 @@ export function About() {
       </Section>
 
       <Section>
-        <div className="chapters chapters--continuation">
+        <div className="chapters chapters--continuation chapters--timeline">
           <article className="chapter">
             <span className="chapter-number">05</span>
             <div>
@@ -162,11 +167,11 @@ export function About() {
               work. It is what fills the well I offer from.
             </p>
             <p className="micro-note">
-              The two studios, and a walk with Max, will be photographed for this
-              page in December 2026.
+              Until Stephanie's own studio and river photographs are ready, this
+              page uses licensed placeholder photography.
             </p>
           </div>
-          <PhotoPlaceholder description={photos.max} ratio="portrait" tone="jute" />
+          <Photo photo={photos.max} ratio="portrait" tone="jute" />
         </div>
       </Section>
 
@@ -204,8 +209,8 @@ export function About() {
               licensure. Credential wording is pending Stephanie's final review.
             </p>
           </div>
-          <PhotoPlaceholder
-            description={photos.studios}
+          <Photo
+            photo={photos.studios}
             ratio="portrait"
             tone="cream"
           />

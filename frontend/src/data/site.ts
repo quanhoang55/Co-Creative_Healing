@@ -1,4 +1,10 @@
 export type PhotoRatio = "wide" | "landscape" | "portrait" | "square";
+export type Photo = {
+  src: string;
+  description: string;
+  alt: string;
+  focus?: string;
+};
 export type Faq = { question: string; answer: string };
 
 export const privacy =
@@ -15,21 +21,83 @@ export const nav = [
 ] as const;
 
 export const photos = {
-  hero: "Stephanie in the studio, natural light, sage chair and cane cabinet, with open space for text",
-  table: "Hands-on work at the table, draped in sage linens",
-  mat: "Mat work on the floor",
-  conversation: "Sitting together in conversation",
-  clover: "Detail shot with a four-leaf clover",
-  transition:
-    "Stephanie in a home doorway, or blessing a space with sage or a candle",
-  keepsake: "Hands holding a meaningful keepsake",
-  movement: "Stephanie in movement, dance, or community",
-  portrait: "Close-up portrait, relaxed and looking at camera",
-  camel: "Camel trek travel photo from the old site",
-  max: "Stephanie with Max, and optionally her husband, by the river",
-  studios: "The two studios side by side, framed without address clues",
-  teaching: "Stephanie teaching or demonstrating technique",
-} as const;
+  hero: {
+    src: "/images/session-table-side.jpg",
+    description: "Hands-on bodywork in soft daylight.",
+    alt: "A bodyworker sits beside a client resting on a treatment table.",
+  },
+  table: {
+    src: "/images/bodywork-hands.jpg",
+    description: "A slow, listening touch at the table.",
+    alt: "A therapist's hands rest on a client's arm during a massage.",
+  },
+  mat: {
+    src: "/images/meditation-grass.jpg",
+    description: "Two people sitting together, eyes closed.",
+    alt: "Two people sit cross-legged on a grassy lawn with eyes closed.",
+  },
+  conversation: {
+    src: "/images/conversation-armchairs.jpg",
+    description: "A conversation in a sunlit sitting room.",
+    alt: "Two women talk in armchairs beside a bright window.",
+  },
+  clover: {
+    src: "/images/forest-light.jpg",
+    description: "Light through the trees.",
+    alt: "Sunbeams filter through a canopy of green leaves.",
+  },
+  transition: {
+    src: "/images/garden-window.jpg",
+    description: "A quiet threshold, held with care.",
+    alt: "A woman in a sun hat smiles beside a white garden window.",
+  },
+  threshold: {
+    src: "/images/meditation-grass.jpg",
+    description: "A pause before the next chapter.",
+    alt: "Two people sit cross-legged on a grassy lawn with eyes closed.",
+  },
+  keepsake: {
+    src: "/images/bodywork-table.jpg",
+    description: "Hands resting where they are needed.",
+    alt: "A therapist leans over a client on a massage table.",
+  },
+  movement: {
+    src: "/images/outdoor-circle.jpg",
+    description: "A community gathered outdoors.",
+    alt: "A small group sits together on rocks beneath an open sky.",
+    focus: "50% 45%",
+  },
+  portrait: {
+    src: "/images/portrait-smile.jpg",
+    description: "A warm, unguarded moment.",
+    alt: "A smiling woman in a lilac shirt stands beside a floor lamp.",
+    focus: "68% 50%",
+  },
+  camel: {
+    src: "/images/outdoor-circle.jpg",
+    description: "A community gathered outdoors.",
+    alt: "A small group sits together on rocks beneath an open sky.",
+    focus: "50% 45%",
+  },
+  max: {
+    src: "/images/forest-light.jpg",
+    description: "Light on the way to the river.",
+    alt: "Sunbeams filter through a canopy of green leaves.",
+    focus: "50% 55%",
+  },
+  studios: {
+    src: "/images/studio-conversation.jpg",
+    description: "A studio made for conversation.",
+    alt: "Two women talk in a studio with clothing racks and plants.",
+    focus: "58% 50%",
+  },
+  teaching: {
+    src: "/images/meditation-class.jpg",
+    description: "Learning together in a bright room.",
+    alt: "A small group sits on mats during a guided class.",
+    focus: "62% 50%",
+  },
+} satisfies Record<string, Photo>;
 
 export const waysToWork = [
   {
